@@ -38,12 +38,42 @@ streamlit run main_refactored.py
 
 The app will open in your browser at `http://localhost:8501`
 
+## Streamlit Cloud Deployment
+
+The app is deployed at: **https://fpl-v1-xryauzckbnbq3snyg29tnv.streamlit.app/**
+
+### Restarting the Cloud App
+
+If you see errors after pushing changes to GitHub:
+1. Go to [Streamlit Cloud](https://share.streamlit.io/)
+2. Click on your app
+3. Click "Reboot app" in the menu (⋮)
+4. Wait for the app to restart with new dependencies
+
+### Running Diagnostics
+
+Visit the diagnostics page to check system health:
+```
+https://fpl-v1-xryauzckbnbq3snyg29tnv.streamlit.app/?diagnostics=true
+```
+
+Or run locally:
+```bash
+streamlit run diagnostics.py
+```
+
 ## Troubleshooting
 
 ### "No FPL Data Available" Error
 
 This error occurs when the app cannot connect to the FPL API. Try these solutions:
 
+**On Streamlit Cloud:**
+1. **Reboot the app** from Streamlit Cloud dashboard
+2. **Check app logs** for specific errors
+3. **Run diagnostics** by adding `?diagnostics=true` to URL
+
+**Locally:**
 1. **Check your internet connection**
 2. **Verify FPL API is accessible**:
    ```bash

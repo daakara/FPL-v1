@@ -58,10 +58,28 @@ class FPLDataService:
         session = requests.Session()
         adapter = requests.adapters.HTTPAdapter(max_retries=3)
         session.mount('https://', adapter)
+        
+        # Set headers to mimic browser
+        session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
 
-        response = session.get(f"{base_url}/bootstrap-static/", 
-                            verify=False, 
-                            timeout=10)
+        try:
+            # Try with SSL verification first
+            response = session.get(
+                f"{base_url}/bootstrap-static/", 
+                verify=True,
+                timeout=15
+            )
+        except requests.exceptions.SSLError:
+            logger.warning("SSL verification failed, trying without verification...")
+            # Fallback to no verification if SSL fails
+            response = session.get(
+                f"{base_url}/bootstrap-static/", 
+                verify=False, 
+                timeout=15
+            )
+        
         response.raise_for_status()
         
         if not response.content:
@@ -71,7 +89,7 @@ class FPLDataService:
         if not data or 'elements' not in data or 'teams' not in data:
             raise ValueError("Invalid data structure received from FPL API")
             
-        logger.info("Successfully fetched FPL data.")
+        logger.info(f"Successfully fetched FPL data: {len(data.get('elements', []))} players, {len(data.get('teams', []))} teams")
         return data
 
     def load_fpl_data(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
