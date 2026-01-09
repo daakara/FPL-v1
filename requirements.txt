@@ -1,1 +1,33 @@
-streamlit-option-menu
+# Core Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.14.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+
+# HTTP & API
+requests>=2.31.0
+urllib3>=2.0.0
+aiohttp>=3.8.0
+
+# Web Scraping
+beautifulsoup4>=4.12.0
+
+# Real-time Communication
+websockets>=11.0
+
+# PDF Generation
+reportlab>=4.0.0
+
+# OpenAI Integration
+openai>=1.0.0
+
+# UI Components
+streamlit-option-menu>=0.3.6
