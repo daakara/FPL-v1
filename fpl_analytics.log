@@ -1,0 +1,169 @@
+2026-01-09 22:39:31,486 - fpl_analytics - INFO - Initializing Enhanced FPL Data Service...
+2026-01-09 22:39:31,487 - fpl_analytics - INFO - Enhanced FPL Data Service initialized successfully
+2026-01-09 22:39:31,488 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:39:31,549 - fpl_analytics - INFO - Fetching FPL bootstrap data...
+2026-01-09 22:39:31,549 - fpl_analytics - INFO - Attempting API request (strategy 1/3) to https://fantasy.premierleague.com/api/bootstrap-static/
+2026-01-09 22:39:33,242 - fpl_analytics - INFO - API request successful with strategy 1
+2026-01-09 22:39:33,281 - fpl_analytics - INFO - Successfully fetched FPL data with 795 players
+2026-01-09 22:39:33,400 - fpl_analytics - INFO - ✅ Live data loaded and validated: 795 players
+2026-01-09 22:39:56,977 - fpl_analytics - WARNING - Missing column position_name in player data
+2026-01-09 22:39:56,977 - fpl_analytics - WARNING - Missing column team_short_name in player data
+2026-01-09 22:39:56,978 - fpl_analytics - WARNING - Missing column cost_millions in player data
+2026-01-09 22:42:17,607 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:42:17,618 - fpl_analytics - INFO - Fetching FPL bootstrap data...
+2026-01-09 22:42:17,618 - fpl_analytics - INFO - Attempting API request (strategy 1/3) to https://fantasy.premierleague.com/api/bootstrap-static/
+2026-01-09 22:42:20,709 - fpl_analytics - INFO - API request successful with strategy 1
+2026-01-09 22:42:20,733 - fpl_analytics - INFO - Successfully fetched FPL data with 795 players
+2026-01-09 22:42:20,784 - fpl_analytics - INFO - ✅ Live data loaded and validated: 795 players
+2026-01-09 22:42:53,492 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:42:58,025 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:43:43,661 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:45:51,913 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:45:56,478 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:46:28,729 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:46:35,387 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:47:27,489 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:47:35,237 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:57:48,654 - fpl_analytics - INFO - Initializing Enhanced FPL Data Service...
+2026-01-09 22:57:48,655 - fpl_analytics - INFO - Enhanced FPL Data Service initialized successfully
+2026-01-09 22:57:48,656 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 22:57:48,720 - fpl_analytics - INFO - Fetching FPL bootstrap data...
+2026-01-09 22:57:48,720 - fpl_analytics - INFO - Attempting API request (strategy 1/3) to https://fantasy.premierleague.com/api/bootstrap-static/
+2026-01-09 22:57:50,526 - fpl_analytics - INFO - API request successful with strategy 1
+2026-01-09 22:57:50,593 - fpl_analytics - INFO - Successfully fetched FPL data with 795 players
+2026-01-09 22:57:50,711 - fpl_analytics - INFO - ✅ Live data loaded and validated: 2 players
+2026-01-09 22:58:25,201 - fpl_analytics - ERROR - Error in Live Data page render: 'list' object has no attribute 'empty'
+2026-01-09 22:58:25,203 - fpl_analytics - ERROR - Full traceback: Traceback (most recent call last):
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 68, in render
+    if df is None or df.empty:
+                     ^^^^^^^^
+AttributeError: 'list' object has no attribute 'empty'
+
+2026-01-09 23:00:14,513 - fpl_analytics - INFO - Initializing Enhanced FPL Data Service...
+2026-01-09 23:00:14,514 - fpl_analytics - INFO - Enhanced FPL Data Service initialized successfully
+2026-01-09 23:00:14,517 - fpl_analytics - INFO - Advanced Cache Manager initialized - Max memory: 100MB
+2026-01-09 23:00:14,619 - fpl_analytics - INFO - Fetching FPL bootstrap data...
+2026-01-09 23:00:14,619 - fpl_analytics - INFO - Attempting API request (strategy 1/3) to https://fantasy.premierleague.com/api/bootstrap-static/
+2026-01-09 23:00:15,849 - fpl_analytics - INFO - API request successful with strategy 1
+2026-01-09 23:00:15,889 - fpl_analytics - INFO - Successfully fetched FPL data with 795 players
+2026-01-09 23:00:15,991 - fpl_analytics - INFO - ✅ Live data loaded and validated: 2 players
+2026-01-09 23:00:24,271 - fpl_analytics - ERROR - Error in Live Data page render: 'transfers_in_event'
+2026-01-09 23:00:24,288 - fpl_analytics - ERROR - Full traceback: Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'transfers_in_event'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 119, in render
+    self._render_live_overview_dashboard(df, teams_df)
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 1192, in _render_live_overview_dashboard
+    hot_players = df.nlargest(5, 'transfers_in_event')[['web_name', 'team', 'transfers_in_event']]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 7666, in nlargest
+    return selectn.SelectNFrame(self, n=n, keep=keep, columns=columns).nlargest()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 57, in nlargest
+    return self.compute("nlargest")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 199, in compute
+    dtype = frame[column].dtype
+            ~~~~~^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'transfers_in_event'
+
+2026-01-09 23:00:26,532 - fpl_analytics - ERROR - Error predicting price changes: Missing required columns: ['web_name', 'transfers_in_event', 'transfers_out_event']
+2026-01-09 23:00:30,947 - fpl_analytics - ERROR - Error predicting price changes: Missing required columns: ['web_name', 'transfers_in_event', 'transfers_out_event']
+2026-01-09 23:00:31,027 - fpl_analytics - ERROR - Error predicting price changes: Missing required columns: ['web_name', 'transfers_in_event', 'transfers_out_event']
+2026-01-09 23:01:07,577 - fpl_analytics - INFO - Initializing FPL Data Service...
+2026-01-09 23:01:07,594 - fpl_analytics - INFO - Starting My Team page render
+2026-01-09 23:01:07,596 - fpl_analytics - INFO - No team loaded, showing import section
+2026-01-09 23:01:07,597 - fpl_analytics - INFO - Rendering team import section
+2026-01-09 23:01:14,427 - fpl_analytics - INFO - Initializing Enhanced FPL Data Service...
+2026-01-09 23:01:14,428 - fpl_analytics - INFO - Enhanced FPL Data Service initialized successfully
+2026-01-09 23:01:14,428 - fpl_analytics - INFO - Fetching FPL bootstrap data...
+2026-01-09 23:01:14,428 - fpl_analytics - INFO - Attempting API request (strategy 1/3) to https://fantasy.premierleague.com/api/bootstrap-static/
+2026-01-09 23:01:18,366 - fpl_analytics - INFO - API request successful with strategy 1
+2026-01-09 23:01:18,391 - fpl_analytics - INFO - Successfully fetched FPL data with 795 players
+2026-01-09 23:01:26,920 - fpl_analytics - ERROR - Error in Live Data page render: 'transfers_in_event'
+2026-01-09 23:01:26,921 - fpl_analytics - ERROR - Full traceback: Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'transfers_in_event'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 119, in render
+    self._render_live_overview_dashboard(df, teams_df)
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 1192, in _render_live_overview_dashboard
+    hot_players = df.nlargest(5, 'transfers_in_event')[['web_name', 'team', 'transfers_in_event']]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 7666, in nlargest
+    return selectn.SelectNFrame(self, n=n, keep=keep, columns=columns).nlargest()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 57, in nlargest
+    return self.compute("nlargest")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 199, in compute
+    dtype = frame[column].dtype
+            ~~~~~^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'transfers_in_event'
+
+2026-01-09 23:01:42,152 - fpl_analytics - ERROR - Error in Live Data page render: 'transfers_in_event'
+2026-01-09 23:01:42,153 - fpl_analytics - ERROR - Full traceback: Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'transfers_in_event'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 119, in render
+    self._render_live_overview_dashboard(df, teams_df)
+  File "/Users/iDavid/Documents/FPL codes/fpl/FPL/views/live_data_page_legacy.py", line 1192, in _render_live_overview_dashboard
+    hot_players = df.nlargest(5, 'transfers_in_event')[['web_name', 'team', 'transfers_in_event']]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 7666, in nlargest
+    return selectn.SelectNFrame(self, n=n, keep=keep, columns=columns).nlargest()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 57, in nlargest
+    return self.compute("nlargest")
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/methods/selectn.py", line 199, in compute
+    dtype = frame[column].dtype
+            ~~~~~^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'transfers_in_event'
+
+2026-01-09 23:01:57,744 - fpl_analytics - WARNING - Missing column position_name in player data
+2026-01-09 23:01:57,745 - fpl_analytics - WARNING - Missing column cost_millions in player data
